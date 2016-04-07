@@ -1,16 +1,13 @@
-﻿deliverIT
+﻿                                                                                        deliverIT
 
 
 deliverIT is a simple delivery game. The characters involved in this game include Cab, Customers and Packages.  The objective of the game is to deliver the given packages to the given destinations within the given time frame, using the available cabs. Each customer will be given an specific amount of money, a certain number of packages and a limited time. He needs to pick out the best combination of cabs available. There will be three different types of cabs available, namely Big, Medium, and Fast. All the above mentioned cabs will have their own qualities and rates. So, the user needs to pick the right combinations for the right moment.  Winning or losing the game depends upon how well the user utilised his resources to deliver the package to the destination. 
 
 
-The project has scope for implementing 7 patterns, Decorator, Composite, Builder, Factory, State, Observer and Chain-of-Responsibility namely. There is a scope for a lot more patterns but for now we will stick to these patterns. The implementation of these patterns is given below:
+The project has scope for implementing 7 patterns, Decorator, Composite, Factory, State, Observer and Chain-of-Responsibility namely. There is a scope for a lot more patterns but for now we will stick to these patterns. The implementation of these patterns is given below:
 
 
 * Decorator And Composite Pattern: Showing the final receipt to the customer, which includes the list of deliveries ordered, their individual rates and the final cost incurred.
-
-
-* Builder Pattern: generating different cabs according to the request from the customer.
 
 
 * Factory: Assigning the proper cab to the proper package. If a request is for a small package then a small cab is assigned.
