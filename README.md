@@ -5,8 +5,8 @@ M. Siddharth Reddy:
                   - XP Value: Communication     
                   - Pattern: State Pattern
 Jayesh Dusseja:
-                  - XP Value:
-                  - Pattern: 
+                  - XP Value: Simplicity
+                  - Pattern: Observer Pattern
 Long Thai Nguyen:
                   - XP Value: Respect
                   - Pattern: Decorator And Composite Pattern
