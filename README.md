@@ -4,7 +4,7 @@ This is a team ReadMe file which contains the details about the team members Res
 M. Siddharth Reddy:
                   - XP Value:
                   - Pattern:
-Jayeesh Dusseja:
+Jayesh Dusseja:
                   - XP Value:
                   - Pattern: 
 Long Thai Nguyen:
@@ -16,5 +16,3 @@ Ashik Panchangam:
 Nischit BN:
                   - XP Value:
                   - Pattern:                  
-                  
-              
