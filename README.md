@@ -8,8 +8,8 @@ Jayesh Dusseja:
                   - XP Value:
                   - Pattern: 
 Long Thai Nguyen:
-                  - XP Value:
-                  - Pattern:
+                  - XP Value: Respect
+                  - Pattern: Decorator And Composite Pattern
 Ashik Panchangam:
                   - XP Value:
                   - Pattern:
