@@ -13,6 +13,6 @@ Long Thai Nguyen:
 Ashik Panchangam:
                   - XP Value:
                   - Pattern:
-Nischit BN:
-                  - XP Value:
-                  - Pattern:                  
+Nischith BN:
+                  - XP Value: Feedback
+                  - Pattern: Factory Pattern                 
