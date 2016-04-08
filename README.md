@@ -2,8 +2,8 @@
 This is a team ReadMe file which contains the details about the team members Responsibilities. 
 
 M. Siddharth Reddy:
-                  - XP Value:
-                  - Pattern:
+                  - XP Value: Communication     
+                  - Pattern: State Pattern
 Jayesh Dusseja:
                   - XP Value:
                   - Pattern: 
