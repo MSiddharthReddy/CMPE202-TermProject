@@ -1,0 +1,5 @@
+Daily Activity Journal of M. Siddharth Reddy
+
+April 11
+
+Checking out How to incorporate object movements and key presses into greenfoot. Plan to complete a sample game development by the end of the Day

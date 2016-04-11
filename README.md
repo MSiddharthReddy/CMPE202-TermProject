@@ -15,4 +15,6 @@ Ashik Panchangam:
                   - Pattern:
 Nischith BN:
                   - XP Value: Feedback
-                  - Pattern: Factory Pattern                 
+                  - Pattern: Factory Pattern
+
+                 
