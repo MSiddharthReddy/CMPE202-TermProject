@@ -1,0 +1,3 @@
+------April 11th, 2016------
+
+-As team planned to drop previously decided idea and work on a new one, I was working on a "Flappy Bird" Greenfoot game and figuring out how many design patterns can we incorporate in that.
