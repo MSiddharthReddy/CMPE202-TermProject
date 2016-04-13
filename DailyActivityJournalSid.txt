@@ -3,3 +3,8 @@ Daily Activity Journal of M. Siddharth Reddy
 April 11
 
 Checking out How to incorporate object movements and key presses into greenfoot. Plan to complete a sample game development by the end of the Day
+
+
+April 12
+
+Figured out the working and implementation of 3 different Patterns with Jayeesh and Ashik. Completed the Class Diagrams for Command, State and Chain-Of-Responsibility design patterns as needed for our project. Will focus on Activity and Sequence diagrams tomorrow.
