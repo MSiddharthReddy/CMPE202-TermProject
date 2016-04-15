@@ -13,6 +13,7 @@ Jayesh Dusseja:
 Long Thai Nguyen:
                   - XP Value: Respect
                   - Pattern: Decorator And Composite Pattern
+		   - Github account: longnguyen0708
 
 Ashik Panchangam:
                   - XP Value:
