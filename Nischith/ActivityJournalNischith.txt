@@ -1,0 +1,17 @@
+11th April 2016
+---------------
+The project that was initially planned for development was to be developed from scratch hence observing the complexity the team decided to incorporate design patterns to an alrady existing application.
+
+Going through a few few existing application I suggested on implementing Flappybird game. The team decided to go through the application and see if different design patterns caould be incorporated into the game. I went through the tutorials and foundout Command pattern and Composite pattern could be incorporated into the game.
+
+12th April 2016
+---------------
+Team decided on implementing deliverIt project from scratch using greenfoot. Started exploring greenfoot. 
+
+13th April 2016
+---------------
+Completed class diagram for Factory pattern. Started class diagram collaboration.
+
+14th April 2016
+---------------
+Completed UI wireframe for launch screen. Working on class diagram collaboration. 
