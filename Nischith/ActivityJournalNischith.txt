@@ -15,3 +15,7 @@ Completed class diagram for Factory pattern. Started class diagram collaboration
 14th April 2016
 ---------------
 Completed UI wireframe for launch screen. Working on class diagram collaboration. 
+
+15th April 2016
+---------------
+Tried to implemented factory pattern to create different types of cars. 
