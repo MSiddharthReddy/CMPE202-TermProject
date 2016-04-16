@@ -6,3 +6,13 @@
 ------April 12th, 2016------
 
 -Team decided to switch back to our original idea for the project. So designed class diagram for Command Pattern implementation in that.
+
+
+------April 14th, 2016------
+
+-Had a team meeting where everyone discussed on the UI wireframes and designs of the project screens and decided to work on it.
+
+
+------April 15th, 2016------
+
+-Completed UI wireframe task assigned to me. Working on code.
