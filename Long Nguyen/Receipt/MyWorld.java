@@ -20,14 +20,26 @@ public class MyWorld extends World
         super(600, 400, 1); 
         receipt = new Receipt();
         addObject(receipt, getWidth()/2, getHeight()/2);
-        
-        ReceiptComponent l1 = new Leaf();
-        ReceiptComponent l2 = new Leaf();
-        ReceiptComponent l3 = new Leaf();
-        receipt.addItem(l1);
-        receipt.addItem(l2);
-        receipt.addItem(l3);
-        
+        CaculatorComponent concreteCaculatorComponent = new ConcreteCalculatorComponent();
+        ReceiptComponent big = new BigItem(concreteCaculatorComponent);
+        ((BigItem) big).setCost(5);
+        ((BigItem) big).setTime(30);        
+        ((BigItem) big).setQuantity(2);
+        ReceiptComponent medium = new MediumItem((CaculatorComponent) big);
+        ((MediumItem) medium).setCost(4);
+        ((MediumItem) medium).setTime(20);
+        ((MediumItem) medium).setQuantity(1);
+        ReceiptComponent small = new SmallItem((CaculatorComponent) medium);
+        ((SmallItem) small).setCost(3);
+        ((SmallItem) small).setTime(10);        
+        ((SmallItem) small).setQuantity(2);        
+        receipt.addItem(big);
+        receipt.addItem(medium);
+        receipt.addItem(small);
+      
         receipt.draw();
+        
+        System.out.println("Total cost: " + ((CaculatorComponent) small).caculCost());
+        System.out.println("Total time: " + ((CaculatorComponent) small).caculTime());
     }
 }
