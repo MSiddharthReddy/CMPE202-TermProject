@@ -19,3 +19,7 @@ Completed UI wireframe for launch screen. Working on class diagram collaboration
 15th April 2016
 ---------------
 Tried to implemented factory pattern to create different types of cars. 
+
+15th April 2016
+---------------
+Implemented sample factory pattern to create different types of cars and packages in eclipse. Decided to start test case preparation for Screen 1. And also decided to start screen development in Greenfoot.
