@@ -9,8 +9,10 @@ import java.awt.Font;
  */
 public class Leaf extends GreenfootImage implements ReceiptComponent
 {
+    public static final int ITEM_WIDTH = 200;
+    public static final int ITEM_HEIGHT = 30;    
     public Leaf() {
-           super(50, 50);     
+           super(ITEM_WIDTH, ITEM_HEIGHT);     
     }
     
     /**
