@@ -23,3 +23,17 @@ Tried to implemented factory pattern to create different types of cars.
 15th April 2016
 ---------------
 Implemented sample factory pattern to create different types of cars and packages in eclipse. Decided to start test case preparation for Screen 1. And also decided to start screen development in Greenfoot.
+
+16th April 2016
+---------------
+
+17th April 2016
+---------------
+
+18th April 2016
+---------------
+Started test case preparation
+
+19th April 2016
+---------------
+Completed test case preparation. Started working on collaborating class diagram after taking input from each team member for their respective patterns. 
