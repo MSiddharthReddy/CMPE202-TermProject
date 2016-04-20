@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=Boat
+comment0.text=\n\ Write\ a\ description\ of\ class\ Boat\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=void\ assign()
+comment2.params=
+comment2.target=void\ run()
+comment3.params=
+comment3.target=void\ change()
+comment4.params=
+comment4.target=void\ act()
+numComments=5
