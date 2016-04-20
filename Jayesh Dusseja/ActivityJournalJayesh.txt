@@ -16,3 +16,14 @@
 ------April 15th, 2016------
 
 -Completed UI wireframe task assigned to me. Working on code.
+
+
+------April 18th, 2016------
+
+-Was working on the implementation of observer pattern.
+
+
+------April 19th, 2016------
+
+-Designed a template for Home screen.
+
