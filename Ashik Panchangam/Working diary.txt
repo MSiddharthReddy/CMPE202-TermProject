@@ -14,3 +14,6 @@ Completed the UI wireframe task that was assigned to me. Working on developing t
 
 April 20th:
 Created a template of how the user interface of our application may initially look like. Added a sample image of how the application would like. 
+
+April 21st:
+Made minor modifications to the actor's positions in the design template.
