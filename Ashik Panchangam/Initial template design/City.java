@@ -18,19 +18,19 @@ public class City extends World
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(1024, 765, 1); 
         BigCab bc = new BigCab();
-        addObject(bc, getWidth(), getHeight());
+        addObject(bc, 900, 390);
         MediumCab mc = new MediumCab();
-        addObject(mc, getWidth(), getHeight());
+        addObject(mc, 900, 470);
         SmallCab sc = new SmallCab();
-        addObject(sc, getWidth(), getHeight());
+        addObject(sc, 900, 570);
         BigPackage bp = new BigPackage();
-        addObject(bp, getWidth(), getHeight());
+        addObject(bp, 500, 725);
         MediumPackage mp = new MediumPackage();
-        addObject(mp, getWidth(), getHeight());
+        addObject(mp, 700, 725);
         SmallPackage sp = new SmallPackage();
-        addObject(sp, getWidth(), getHeight());
+        addObject(sp, 900, 725);
         Home h = new Home();
-        addObject(h, getWidth(), getHeight());
+        addObject(h, 100, 290);
     }
     
 }
