@@ -8,6 +8,6 @@ public interface Handler
 {
     // instance variables - replace the example below with your own
     public void setSuccessor(Handler next);
-      public void assign(int a);
+    public void assign(int a);
     public void start();
 }

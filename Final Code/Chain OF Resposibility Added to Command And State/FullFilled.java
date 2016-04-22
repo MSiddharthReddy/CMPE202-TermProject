@@ -6,34 +6,26 @@
  */
 public class FullFilled  implements VehicleState
 {
-    // instance variables - replace the example below with your own
+    public int pack = 2;
+    Vehicle s;
     
-   public int pack = 2;
-   Vehicle s;
     /**
      * Constructor for objects of class Empty
      */
     public FullFilled(Vehicle s){
-     
       this.s = s;
-      
     }
+    
     public int getPack()
     {
           return pack;
     }
-   public void assign(){
-       
-        
+    
+    public void assign(){
         pack = 2;
         System.out.println("Already Full Press Start");
-       
-        
-    
-   }
+    }
    
-    
-    
     public void start(){
         
         s.setState(s.getIn());

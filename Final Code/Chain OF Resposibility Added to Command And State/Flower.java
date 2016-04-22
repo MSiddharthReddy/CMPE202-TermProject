@@ -8,15 +8,11 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
  */
 public class Flower extends Actor implements invoker
 {
-    // instance variables - replace the example below with your own
-   
-
     /**
      * Constructor for objects of class invoke
      */
     private Command c;
-    public void setCommand(Command c)
-    {
+    public void setCommand(Command c){
         this.c = c;
     }
 
@@ -27,7 +23,6 @@ public class Flower extends Actor implements invoker
      * @return     the sum of x and y 
      */
     public void invoke(){
-        
         c.execute(1);
     }
 }

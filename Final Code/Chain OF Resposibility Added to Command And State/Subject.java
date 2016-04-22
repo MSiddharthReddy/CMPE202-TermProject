@@ -1,10 +1,10 @@
 /**
- * Write a description of class Command here.
+ * Write a description of class Subject here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public interface Command  
+public interface Subject  
 {
     /**
      * An example of a method - replace this comment with your own
@@ -12,5 +12,7 @@ public interface Command
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public void execute(int a);
+    public void attach(Observer obj);
+    public void detach(Observer obj);
+    public void notifyObservers(int time);
 }

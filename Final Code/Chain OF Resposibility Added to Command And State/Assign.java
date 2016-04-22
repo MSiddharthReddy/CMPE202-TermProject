@@ -11,8 +11,8 @@ public class Assign implements Command
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
     private Vehicle v;
+    
     public Assign (Vehicle v){
-        
         this.v = v;
     }
     
@@ -22,7 +22,6 @@ public class Assign implements Command
         v.assign(a);
     }    
     
-    public void act(){
-    }
+    public void act(){}
 }
 

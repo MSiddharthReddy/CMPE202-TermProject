@@ -12,7 +12,6 @@ public class StartIn implements Command
      */
     private Vehicle v;
     public StartIn (Vehicle v){
-        
         this.v = v;
     }
     
@@ -22,6 +21,5 @@ public class StartIn implements Command
         v.start();
     }    
     
-    public void act(){
-    }
+    public void act(){}
 }
