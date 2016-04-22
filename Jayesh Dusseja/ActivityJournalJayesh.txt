@@ -27,3 +27,12 @@
 
 -Designed a template for Home screen.
 
+
+------April 21th, 2016------
+
+-Designed test cases for UI screen 4.
+
+
+------April 22th, 2016------
+
+-Implemented Observer Pattern Version-1.
