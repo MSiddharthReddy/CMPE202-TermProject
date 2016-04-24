@@ -20,10 +20,10 @@ public interface Vehicle
      * @param  y   a sample parameter for a method
      * @return     the sum of x and y 
      */
-    public void assign(int a);
+    public boolean assign(int a);
     //public void run();
     //public void change();
-    public void start();
+    public boolean start();
      public VehicleState getHalf(); 
    public VehicleState getFull(); 
    public VehicleState getIn(); 

@@ -37,3 +37,15 @@ Started test case preparation
 19th April 2016
 ---------------
 Completed test case preparation. Started working on collaborating class diagram after taking input from each team member for their respective patterns. 
+
+20th April 2016
+---------------
+Collaborated factory and state patterns class diagram.
+
+21th April 2016
+---------------
+Implemeted a iniial template for the game.
+
+22th April 2016
+---------------
+Completed collaboration of class diagram. Started implementation of factory pattern.
