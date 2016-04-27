@@ -35,6 +35,7 @@ public class HalfFilled implements VehicleState
     
     
     public void start(){
+         
         s.setState(s.getIn());
     }
    

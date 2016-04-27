@@ -1,12 +1,12 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
-
+import java.util.ArrayList;
 /**
  * Write a description of class Rocket here.
  * 
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Rocket extends Actor implements Vehicle, Handler, Observer
+public class Rocket extends Actor implements Vehicle, Handler, Subject2
 {
     /**
      * Act - do whatever the Rocket wants to do. This method is called whenever
@@ -19,16 +19,10 @@ public class Rocket extends Actor implements Vehicle, Handler, Observer
      VehicleState fullFilled;
       VehicleState inTransit;
     VehicleState currentState;
-    Subject sub;
-    int distance = 0;
-    int transitStart = 0;
-    int transitEnd = 0;
-    int speed = 0;
-    boolean returnTrip = false;
-    
-    public Rocket(Subject sub){
-        this.sub = sub;
-        sub.attach(this);
+    VehicleOverhead c;
+     VehicleFactory f = new VehicleFactory();
+      private ArrayList<Observer> obs = new ArrayList<Observer>();
+    public Rocket(){
              empty = new Empty(this);
         halfFilled = new HalfFilled(this);
         fullFilled = new FullFilled(this);
@@ -41,16 +35,19 @@ public class Rocket extends Actor implements Vehicle, Handler, Observer
         this.next = next;
     }
     
-    public void assign(int a)
+    public boolean assign(int a)
     {
         int pack = currentState.getPack();
        
         
         if(currentState!=fullFilled && currentState!= inTransit && a < 2)
         { System.out.println("Rocket Packages before " + pack);
-            currentState.assign();}
+            currentState.assign();
+            return true;}
         else
         { //currentState.assign();}
+        return false;
+       
     }
         
     }
@@ -59,31 +56,20 @@ public class Rocket extends Actor implements Vehicle, Handler, Observer
       currentState = s;   
     }
     
-   public void start(){
+   public boolean start(){
         
        int pack = currentState.getPack();
        
         if(currentState!= inTransit)
         {
              System.out.println("Rocket Starting with" + pack);
-             distance = ((this.getWorld().getObjects(Destination.class)).get(0).getX()) - this.getX();
-            transitStart = Timer.totalTime;
-            if(pack == 0){
-                transitEnd = transitStart - 10;
-                speed = (distance * 2) / 10;
-            }
-            else if(pack == 1){
-                transitEnd = transitStart - 20;
-                speed = (distance * 2) / 20;
-            }
-            else if(pack == 2){
-                transitEnd = transitStart - 30;
-                speed = (distance * 2) / 30;
-            }
-            returnTrip = false;
-             currentState.start();}
+             currentState.start();
+             c = f.makeSet("R", pack);
+            //System.out.println(c.getPrice() + " " + c.getTime());
+            notifyObservers(c.getPrice());
+            return true;}
         else
-        {currentState.start();
+        {return false;
         }
         
     }
@@ -92,18 +78,16 @@ public class Rocket extends Actor implements Vehicle, Handler, Observer
    public VehicleState getFull(){return fullFilled;}  
    public VehicleState getIn(){return inTransit;}  
    public VehicleState getEmpty(){return empty;} 
-
-   public void update (int time){
-       if(currentState.getClass().getName() == "InTransit"){
-            if(time >= transitEnd){
-                if(!returnTrip){
-                    move(speed);
-                    if(getX() >= (this.getWorld().getObjects(Destination.class)).get(0).getX())
-                        returnTrip = true;
-                }
-                else
-                    move(-speed);
-            }
+    
+   public void addObserver(Observer o){
+        obs.add(o);
+    }
+    
+    public void notifyObservers(int pack)
+    {
+        for (Observer obj: obs){
+            obj.update(pack);
         }
-   }
+    }
+   
 }
