@@ -36,3 +36,8 @@
 ------April 22th, 2016------
 
 -Implemented Observer Pattern Version-1.
+
+
+------April 27th, 2016------
+
+-Integrating everyone's code into final game.
