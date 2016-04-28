@@ -21,3 +21,46 @@ Had a team meeting to decide upon how the wire frames should look. Everyone show
 April 15
 
 Completed the design of the WireFrame assigned to me. Working on the code part of my patterns and the UI in GreenFoot.
+
+April 16
+Working on Code for Command and State Patterns
+
+April 17
+— No Work done on Project today —
+
+April 18 - 19 (no Updates
+
+April 20
+Working on Code for Command and State Patterns. Completed UI design.
+
+April 21
+Reviewed UI Code and checked the working.
+
+April 22
+Completed working code for command pattern.
+
+April 23
+Working on code for state pattern.
+
+April 22
+Completed working code for state pattern
+
+April 23
+Working on Class diagrams and test cases.
+
+April 24
+Factory pattern causing troubles to state and command. Issue raised. 
+
+April 25
+Reviewed code for the changed factory.
+
+April 26
+No work done.
+
+April 27
+
+Completed modifying the class diagram for Command.
+
+April 28
+
+Completed modifying the class diagram for state.
