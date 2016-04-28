@@ -8,7 +8,7 @@ import java.util.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Timer extends Actor implements Subject
+public class Timer extends Actor implements TimerSubject
 {
     ArrayList<Observer> observers = new ArrayList<Observer>();
     static int totalTime = 0;

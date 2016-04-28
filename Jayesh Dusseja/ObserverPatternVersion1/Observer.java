@@ -13,5 +13,5 @@ public interface Observer
      * @return     the sum of x and y 
      */
     
-    public void update(int time);
+    public void update(int a);
 }

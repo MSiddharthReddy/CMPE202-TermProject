@@ -18,14 +18,14 @@ public class Boat extends Actor implements Vehicle, Handler, Observer
      VehicleState fullFilled;
       VehicleState inTransit;
     VehicleState currentState;
-    Subject sub;
+    TimerSubject sub;
     int distance = 0;
     int transitStart = 0;
     int transitEnd = 0;
     int speed = 0;
     boolean returnTrip = false;
     
-    public Boat(Subject sub){
+    public Boat(TimerSubject sub){
         
         this.sub = sub;
         sub.attach(this);

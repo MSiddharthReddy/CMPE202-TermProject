@@ -23,9 +23,9 @@ public class Car extends Actor implements Vehicle, Handler, Observer
     int transitEnd = 0;
     int speed = 0;
     boolean returnTrip = false;
-    Subject sub;
+    TimerSubject sub;
     
-    public Car(Subject sub)
+    public Car(TimerSubject sub)
     {
         this.sub = sub;
         sub.attach(this);
