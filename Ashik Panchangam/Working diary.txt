@@ -17,3 +17,9 @@ Created a template of how the user interface of our application may initially lo
 
 April 21st:
 Made minor modifications to the actor's positions in the design template.
+
+April 27th:
+Created test cases for the user interface of screen 3
+
+April 28th:
+Started working on creating Use cases and Use case diagrams.
