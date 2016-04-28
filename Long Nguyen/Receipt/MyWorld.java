@@ -9,6 +9,7 @@ import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 public class MyWorld extends World
 {
     private Receipt receipt;
+    private GameOver gameover;
 
     /**
      * Constructor for objects of class MyWorld.
@@ -25,7 +26,7 @@ public class MyWorld extends World
         ReceiptComponent big = new BigItem(concreteCaculatorComponent);
         ((BigItem) big).setCost(5);
         ((BigItem) big).setTime(30);        
-        ((BigItem) big).setQuantity(2);
+        ((BigItem) big).setQuantity(1);
         
         ReceiptComponent medium = new MediumItem((CaculatorComponent) big);
         ((MediumItem) medium).setCost(4);
@@ -48,6 +49,12 @@ public class MyWorld extends World
         receipt.addItem(receiptTotal);
       
         receipt.draw();
+        
+        gameover = new GameOver();
+        addObject(gameover,  getWidth()/6*5, getHeight()/3);
  
+        Replay replay = new Replay();
+        addObject(replay,  getWidth()/6*5, getHeight()/3*2);
+
     }
 }
