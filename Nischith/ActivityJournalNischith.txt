@@ -49,3 +49,27 @@ Implemeted a iniial template for the game.
 22th April 2016
 ---------------
 Completed collaboration of class diagram. Started implementation of factory pattern.
+
+23rd April 2016
+----------------
+Not worked
+
+24th April 2016
+----------------
+Integrated factory pattern with other patterns
+
+25th April 2016
+---------------
+Not worked
+
+26th April 2016
+---------------
+There was a issue raised due to integration of factory pattern. Fixed the issue
+
+27th April 2016
+---------------
+Started updating class diagram for factory pattern. Started working on animation of cars.
+
+28th April 2016
+---------------
+Started updating collaborated class diagram
