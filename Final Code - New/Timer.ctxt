@@ -1,0 +1,19 @@
+#BlueJ class context
+comment0.target=Timer
+comment0.text=\n\ Write\ a\ description\ of\ class\ Timer\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=totalTime
+comment1.target=Timer(int)
+comment1.text=\n\ Act\ -\ do\ whatever\ the\ Timer\ wants\ to\ do.\ This\ method\ is\ called\ whenever\n\ the\ 'Act'\ or\ 'Run'\ button\ gets\ pressed\ in\ the\ environment.\n
+comment2.params=
+comment2.target=void\ act()
+comment3.params=r
+comment3.target=void\ setReceipt(Receipt)
+comment4.params=time
+comment4.target=void\ draw(int)
+comment5.params=obj
+comment5.target=void\ attach(Observer)
+comment6.params=obj
+comment6.target=void\ detach(Observer)
+comment7.params=time
+comment7.target=void\ notifyObservers(int)
+numComments=8

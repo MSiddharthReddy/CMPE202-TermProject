@@ -1,0 +1,12 @@
+#BlueJ class context
+comment0.target=ReceiptTotal
+comment0.text=\n\ Write\ a\ description\ of\ class\ ReceiptToal\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=cost\ time
+comment1.target=ReceiptTotal(int,\ int)
+comment2.params=
+comment2.target=void\ draw()
+comment3.params=component
+comment3.target=void\ addItem(ReceiptComponent)
+comment4.params=i
+comment4.target=ReceiptComponent\ getItem(int)
+numComments=5

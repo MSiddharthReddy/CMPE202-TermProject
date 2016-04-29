@@ -1,0 +1,11 @@
+#BlueJ class context
+comment0.target=TreeText
+comment1.params=s\ n
+comment1.target=TreeText(Subject,\ int)
+comment2.params=a
+comment2.target=void\ update(int)
+comment3.params=text
+comment3.target=void\ setText(int)
+comment4.params=
+comment4.target=int\ getBig()
+numComments=5

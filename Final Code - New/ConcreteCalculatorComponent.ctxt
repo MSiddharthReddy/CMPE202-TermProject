@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.target=ConcreteCalculatorComponent
+comment0.text=\n\ Write\ a\ description\ of\ class\ ConcreteCalulatorComponent\ here.\n\ \n\ @author\ (your\ name)\ \n\ @version\ (a\ version\ number\ or\ a\ date)\n
+comment1.params=
+comment1.target=int\ caculCost()
+comment2.params=
+comment2.target=int\ caculTime()
+comment3.params=
+comment3.target=void\ draw()
+comment4.params=component
+comment4.target=void\ addItem(ReceiptComponent)
+comment5.params=i
+comment5.target=ReceiptComponent\ getItem(int)
+numComments=6
