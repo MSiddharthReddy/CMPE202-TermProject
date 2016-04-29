@@ -1,9 +1,0 @@
-#BlueJ class context
-comment0.target=Money
-comment1.params=s\ s2\ s3\ n
-comment1.target=Money(Subject2,\ Subject2,\ Subject2,\ int)
-comment2.params=a
-comment2.target=void\ update(int)
-comment3.params=text
-comment3.target=void\ setText(int)
-numComments=4
