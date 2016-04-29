@@ -22,7 +22,8 @@ public class Money extends Actor implements Observer
         s.addObserver(this);
         s2.addObserver(this);
         s3.addObserver(this);
-        no = n;
+        //no = n;
+        no = 20;
         setText(no);
     }
     
@@ -37,12 +38,6 @@ public class Money extends Actor implements Observer
     public void setText(int text)
     {
         setImage(new GreenfootImage(""+text, 24, Color.black, new Color(0, 0, 0, 0)));
-        if(text == 0){
-           
-            World world = getWorld();
-             world.removeObjects(world.getObjects(null));
-            world.addObject(new GameOverScreen(), world.getWidth()/2, world.getHeight()/2);
-             Greenfoot.stop();
-        }   
+        
     } 
 }

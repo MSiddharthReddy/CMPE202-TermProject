@@ -8,7 +8,7 @@ import java.util.*;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Timer extends Actor implements Subject
+public class Timer extends Actor implements TimerSubject
 {
     ArrayList<Observer> observers = new ArrayList<Observer>();
     static int totalTime = 0;
@@ -54,6 +54,14 @@ public class Timer extends Actor implements Subject
         newImage.setColor(Color.black);
         newImage.drawString("Time Left: " + time, 20, 35);
         setImage(newImage);
+        
+        if(time == 0){
+           
+            World world = getWorld();
+             world.removeObjects(world.getObjects(null));
+            world.addObject(new GameOverScreen(), world.getWidth()/2, world.getHeight()/2);
+             Greenfoot.stop();
+        }   
     }
     
     public void attach(Observer obj){

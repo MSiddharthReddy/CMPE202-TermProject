@@ -24,11 +24,11 @@ public abstract class VehicleOverhead
    {
        
        switch(a){
-           case 0: time = 5;
+           case 0: time = 6;
                    break;
-           case 1: time = 10;
+           case 1: time = 12;
                    break;
-           case 2: time = 20;
+           case 2: time = 18;
                    break;
                 }
     }   

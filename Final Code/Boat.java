@@ -6,7 +6,7 @@ import java.util.ArrayList;
  * @author (your name) 
  * @version (a version number or a date)
  */
-public class Boat extends Actor implements Vehicle, Handler,Subject2
+public class Boat extends Actor implements Vehicle, Handler,Subject2, Observer
 {
     /**
      * Act - do whatever the Boat wants to do. This method is called whenever
@@ -21,7 +21,17 @@ public class Boat extends Actor implements Vehicle, Handler,Subject2
     VehicleOverhead c;
      VehicleFactory f = new VehicleFactory();
       private ArrayList<Observer> obs = new ArrayList<Observer>();
-    public Boat(){
+      int distance = 0;
+    int transitStart = 0;
+    int transitEnd = 0;
+    int speed = 0;
+    boolean returnTrip = false;
+    TimerSubject sub;
+    public Boat(TimerSubject sub)
+    {
+        
+        this.sub = sub;
+        sub.attach(this);
              empty = new Empty(this);
         halfFilled = new HalfFilled(this);
         fullFilled = new FullFilled(this);
@@ -65,6 +75,12 @@ public class Boat extends Actor implements Vehicle, Handler,Subject2
             c = f.makeSet("B", pack);
             //System.out.println(c.getPrice() + " " + c.getTime());
             notifyObservers(c.getPrice());
+            int i = c.getTime();
+            distance = ((this.getWorld().getObjects(Destination.class)).get(0).getX()) - this.getX();
+            transitStart = Timer.totalTime;
+             transitEnd = transitStart - i;
+                speed = (distance * 2) / i;
+       
         return true;}
         else
         {return (next.start());}
@@ -84,6 +100,24 @@ public class Boat extends Actor implements Vehicle, Handler,Subject2
     {
         for (Observer obj: obs){
             obj.update(pack);
+        }
+    }
+     public void update(int time){
+        //System.out.println("" + distance);
+        if(currentState.getClass().getName() == "InTransit"){
+            if(time >= transitEnd){
+                if(!returnTrip){
+                    move(speed);
+                    if(getX() >= (this.getWorld().getObjects(Destination.class)).get(0).getX())
+                        returnTrip = true;
+                }
+                else
+                    move(-speed);
+            }
+            else{
+                setState(getEmpty());
+                returnTrip = false;
+            }
         }
     }
 }
