@@ -11,24 +11,32 @@ public class Receipt extends Actor implements ReceiptComponent
     public static final int ITEM_DISTANCE = 1;
     public static final int TOTAL_ADD_DISTANCE = 7;    
     List<ReceiptComponent> itemList;
-    
+    Replay r = new Replay();
     public Receipt() {
+        
+        World world = getWorld();
         GreenfootImage i = getImage();
         i.scale(600, 400);
         setImage(i);
         itemList = new LinkedList<ReceiptComponent>();     
         ReceiptComponent concreteCaculatorComponent = new ConcreteCalculatorComponent();
         itemList.add(concreteCaculatorComponent);
+        //world.addObject(r, world.getWidth()/2,world.getHeight() - 80);
     }
     
     /**
      * Act - do whatever the Receipt wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
      */
-    public void act() 
+    public void act()
     {
-        // Add your action code here.
-    }    
+           if(Greenfoot.mouseClicked(r))
+      {
+        
+           Greenfoot.setWorld(new CarWorld());
+            
+       }
+    }  
     
     public void draw() {
         GreenfootImage receiptImage = getImage();

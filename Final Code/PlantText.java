@@ -6,12 +6,14 @@
  */
 import greenfoot.*;
 import java.awt.Color;
+import java.util.ArrayList;
  
-public class PlantText extends Actor implements Observer
+public class PlantText extends Actor implements Observer, Subject
 {
     
     private Subject s;
     private int no;
+      private ArrayList<Observer> obs = new ArrayList<Observer>();
     public PlantText(Subject s, int n)
     {
         this.s = s;
@@ -25,15 +27,29 @@ public class PlantText extends Actor implements Observer
         
         no = a;
         setText(no);
+        if (no == 0)
+        {
+            notifyObservers();
+        }
     
     }    
     
     public void setText(int text)
     {
-        setImage(new GreenfootImage(""+text, 24, Color.black, new Color(0, 0, 0, 0)));
+        setImage(new GreenfootImage(""+no, 24, Color.black, new Color(0, 0, 0, 0)));
     } 
     
     public int getMedium() {
         return no;
+    }
+     public void addObserver(Observer o){
+        obs.add(o);
+    }
+    
+    public void notifyObservers()
+    {
+        for (Observer obj: obs){
+            obj.update(no);
+        }
     }
 }

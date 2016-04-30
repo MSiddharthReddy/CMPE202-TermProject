@@ -17,6 +17,7 @@ public class Timer extends Actor implements TimerSubject
     int difference = 0;
     int newdiff = 0;
     Receipt receipt;
+    //Money m = new Money();
     /**
      * Act - do whatever the Timer wants to do. This method is called whenever
      * the 'Act' or 'Run' button gets pressed in the environment.
@@ -26,6 +27,8 @@ public class Timer extends Actor implements TimerSubject
         this.totalTime = totalTime;
         startTime = Calendar.getInstance().getTime();
         draw(totalTime);
+        
+        
     }
     
     public void act() 
@@ -78,16 +81,22 @@ public class Timer extends Actor implements TimerSubject
         receipt.draw();
         
         if ((((CarWorld) getWorld()).getMoney() >= totalCost) && (((TreeText) ((CarWorld) getWorld()).getTreeText()).getBig() == 0)  && (((FlowerText) ((CarWorld) getWorld()).getFlowerText()).getSmall() == 0) && (((PlantText) ((CarWorld) getWorld()).getPlantText()).getMedium() == 0 )) {
+         if((((Car) ((CarWorld) getWorld()).getCar()).getState() == ((Car) ((CarWorld) getWorld()).getCar()).getEmpty() )  && (((Boat) ((CarWorld) getWorld()).getBoat()).getState() == ((Boat) ((CarWorld) getWorld()).getBoat()).getEmpty() ) && (((Rocket) ((CarWorld) getWorld()).getRocket()).getState() == ((Rocket) ((CarWorld) getWorld()).getRocket()).getEmpty() ) ){
          
-            getWorld().addObject(new Won(), getWorld().getWidth()/3, getWorld().getHeight()/3);
+            getWorld().addObject(new Won(), getWorld().getWidth()/2 + 100, getWorld().getHeight()/2 + 100);
         }
+         else{
+            getWorld().addObject(new GameOverScreen(), getWorld().getWidth()/2 + 100, getWorld().getHeight()/2 + 100);
+        }
+    }
         else{
-            getWorld().addObject(new GameOverScreen(), getWorld().getWidth()/3, getWorld().getHeight()/3);
+            getWorld().addObject(new GameOverScreen(), getWorld().getWidth()/2 + 100, getWorld().getHeight()/2 + 100);
         }
         
         Greenfoot.stop();
-        }   
-    }
+        }
+        
+   }
     
     public void attach(Observer obj){
         observers.add(obj);

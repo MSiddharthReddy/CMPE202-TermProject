@@ -16,7 +16,7 @@ public class CarWorld extends World
      */
     Receipt receipt = new Receipt();
     Random random = new Random();
-   int i = random.nextInt(20);
+   //int i = random.nextInt(20);
    int pi = random.nextInt(2);
    int ti = random.nextInt(2);
    int fi = random.nextInt(2);
@@ -26,15 +26,14 @@ public class CarWorld extends World
     Rocket  r = new Rocket(gameTime);
     Command tb = new Assign(b);
     Command sb = new StartIn(b);
-    Plant  p = new Plant(pi);
-    Flower  f = new Flower(fi);
+    Plant  p = new Plant(1);
+    Flower  f = new Flower(1);
     Start s = new Start();
-    Tree t = new Tree(ti);
+    Tree t = new Tree(1);
     TreeText pt = new TreeText(t, ti);
-    PlantText pp = new PlantText(p, pi);
-    FlowerText pf = new FlowerText(f, fi);
-    Money m = new Money(c, b ,r, i);
-    
+    PlantText pp = new PlantText(p,pi);
+    FlowerText pf = new FlowerText(f,fi );
+    Money m = new Money(c, b ,r, 9);
       
     public CarWorld()
     {    
@@ -95,8 +94,11 @@ public class CarWorld extends World
     }
     
     public int getMoney() {
-        return i;
+        return 9;
     }   
+     public Money getMon() {
+        return m;
+    }  
     
     public TreeText getTreeText() {
         return pt;
@@ -106,5 +108,12 @@ public class CarWorld extends World
     }
         public FlowerText getFlowerText() {
         return pf;
+    }
+     public Car getCar() {
+        return c;
+    } public Boat getBoat() {
+        return b;
+    } public Rocket getRocket() {
+        return r;
     }
 }

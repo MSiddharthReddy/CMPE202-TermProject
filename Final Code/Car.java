@@ -70,7 +70,10 @@ public class Car extends Actor implements Vehicle, Handler, Subject2, Observer
     {
       currentState = s;   
     }
-    
+    public VehicleState getState()
+    {
+      return currentState;   
+    }
     public boolean start(){
         
         int pack = currentState.getPack();

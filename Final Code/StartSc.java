@@ -4,8 +4,6 @@ import java.awt.Color;
 public class StartSc extends Actor 
 {
     
-    private Subject s;
-    private int no;
     public StartSc()
     {
     

@@ -14,6 +14,7 @@ public class Money extends Actor implements Observer
      private Subject2 s2;
       private Subject2 s3;
     private int no;
+     Receipt receipt = new Receipt();
     public Money(Subject2 s, Subject2 s2,Subject2 s3,int n)
     {
         this.s = s;
@@ -22,9 +23,10 @@ public class Money extends Actor implements Observer
         s.addObserver(this);
         s2.addObserver(this);
         s3.addObserver(this);
-        //no = n;
-        no = 20;
+        no = n;
+        //no = 20;
         setText(no);
+       
     }
     
     public void update(int a)
@@ -32,9 +34,10 @@ public class Money extends Actor implements Observer
         
         no = no - a;
         setText(no);
-    
-    }    
-    
+    }
+   public int getMoney(){
+      return no;
+    }
     public void setText(int text)
     {
         setImage(new GreenfootImage(""+text, 24, Color.black, new Color(0, 0, 0, 0)));

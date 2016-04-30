@@ -69,6 +69,10 @@ public class Boat extends Actor implements Vehicle, Handler,Subject2, Observer
     {
       currentState = s;   
     }
+     public VehicleState getState()
+    {
+      return currentState;   
+    }
     
    public boolean start(){
         

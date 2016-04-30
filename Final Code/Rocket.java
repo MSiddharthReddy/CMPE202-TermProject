@@ -71,7 +71,10 @@ public class Rocket extends Actor implements Vehicle, Handler, Subject2, Observe
     {
       currentState = s;   
     }
-    
+     public VehicleState getState()
+    {
+      return currentState;   
+    }
    public boolean start(){
         
        int pack = currentState.getPack();
