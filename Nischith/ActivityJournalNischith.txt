@@ -73,3 +73,7 @@ Started updating class diagram for factory pattern. Started working on animation
 28th April 2016
 ---------------
 Started updating collaborated class diagram
+
+29th April 2016
+---------------
+Updated class diagram for factory pattern
