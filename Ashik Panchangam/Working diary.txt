@@ -23,3 +23,6 @@ Created test cases for the user interface of screen 3
 
 April 28th:
 Started working on creating Use cases and Use case diagrams.
+
+April 29th:
+Created Use case diagram of the game.
