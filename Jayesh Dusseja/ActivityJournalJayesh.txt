@@ -41,3 +41,18 @@
 ------April 27th, 2016------
 
 -Integrating everyone's code into final game.
+
+
+------April 28th, 2016------
+
+-Trying to solve the issues which came up while integrating everyone's code.
+
+
+------April 29th, 2016------
+
+-Integrated decorator and composite pattern with the rest of code.
+
+
+------April 30th, 2016------
+
+-Testing the final code for any errors.
