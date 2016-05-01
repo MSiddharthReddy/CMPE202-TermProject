@@ -1,5 +1,7 @@
 import greenfoot.*;  // (World, Actor, GreenfootImage, Greenfoot and MouseInfo)
 import java.util.*;
+import java.awt.Shape;
+import java.awt.geom.*;
 /**
  * Write a description of class Receipt here.
  * 
@@ -17,11 +19,14 @@ public class Receipt extends Actor implements ReceiptComponent
         World world = getWorld();
         GreenfootImage i = getImage();
         i.scale(600, 400);
+        Shape roundRectangle = new RoundRectangle2D.Float(15, 15, 570, 370, 15, 15);
+        i.drawShape(roundRectangle);
         setImage(i);
         itemList = new LinkedList<ReceiptComponent>();     
         ReceiptComponent concreteCaculatorComponent = new ConcreteCalculatorComponent();
         itemList.add(concreteCaculatorComponent);
         //world.addObject(r, world.getWidth()/2,world.getHeight() - 80);
+        
     }
     
     /**
