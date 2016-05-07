@@ -14,11 +14,13 @@ public class StartScreen extends World
      * 
      */
     StartSc s = new StartSc();
+    RulesSc r = new RulesSc();
     public StartScreen()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
         super(600, 400, 1); 
-         addObject(s, getWidth()/2,getHeight() - 80);
+         addObject(s, getWidth()/2,getHeight() - 160);
+         addObject(r, getWidth()/2,getHeight() - 80);
          
         
         
@@ -29,6 +31,12 @@ public class StartScreen extends World
       {
         
            Greenfoot.setWorld(new CarWorld());
+            
+       }
+       else if(Greenfoot.mouseClicked(r))
+      {
+        
+           Greenfoot.setWorld(new Rules());
             
        }
     }
