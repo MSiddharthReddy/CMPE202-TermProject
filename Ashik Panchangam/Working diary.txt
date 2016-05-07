@@ -26,3 +26,6 @@ Started working on creating Use cases and Use case diagrams.
 
 April 29th:
 Created Use case diagram of the game.
+
+May 7th:
+Finished the implementation of the project. Also reviewed the code and simplified it.
