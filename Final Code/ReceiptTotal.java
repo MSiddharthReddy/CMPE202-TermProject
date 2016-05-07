@@ -18,7 +18,7 @@ public class ReceiptTotal extends Leaf
     }
     
     public void draw() {
-             clear();
+           clear();
            Color c = new Color(247, 222, 170);
            setColor(c);
            Font f = new Font("Comic Sans MS", Font.PLAIN, 16);
