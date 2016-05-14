@@ -17,7 +17,7 @@ public class Rul extends Actor
     public void act() 
     {
         // Add your action code here.
-        setImage(new GreenfootImage( text,15, Color.white, new Color(0, 0, 0, 0)));
+        setImage(new GreenfootImage( text,20, Color.white, new Color(0, 0, 0, 0)));
         
     }    
 }

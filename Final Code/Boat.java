@@ -122,17 +122,26 @@ public class Boat extends Actor implements Vehicle, Handler,Subject2, Observer
             if(time >= transitEnd){
                 if(!returnTrip){
                     move(speed);
-                    if(getX() >= (this.getWorld().getObjects(Destination.class)).get(0).getX())
+                    if(getX() >= (this.getWorld().getObjects(Destination.class)).get(0).getX()) {
                         returnTrip = true;
+                        setRotation(180);
+                    GreenfootImage img = getImage();
+                    img.mirrorVertically();
+                    setImage(img);
+//                    move(-speed);
+                    }
                 }
                 else {
-                     setRotation(180);
+                    
                     move(speed);
                 }
             }
             else{
                 setState(getEmpty());
                 setRotation(360);
+                 GreenfootImage img = getImage();
+                    img.mirrorVertically();
+                    setImage(img);
                 returnTrip = false;
             }
         }

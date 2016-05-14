@@ -17,10 +17,9 @@ public class Rules extends World
     Back b = new Back();
     public Rules()
     {    
-        // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(960, 540, 1); 
         
-        addObject(r, 300 , 200);
+        addObject(r, 480 , 300);
         addObject(b, getWidth() - 100,getHeight() - 60);
     }
     public void act()

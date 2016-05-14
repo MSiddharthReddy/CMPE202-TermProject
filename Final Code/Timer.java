@@ -59,7 +59,7 @@ public class Timer extends Actor implements TimerSubject
         newImage.setColor(new Color(127, 127, 127, 127));
         newImage.fill();
         
-        newImage.setColor(Color.black);
+        newImage.setColor(Color.white);
         newImage.drawString("Time Left: " + time, 20, 35);
         setImage(newImage);
         

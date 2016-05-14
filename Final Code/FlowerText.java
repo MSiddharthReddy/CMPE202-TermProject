@@ -36,7 +36,7 @@ public class FlowerText extends Actor implements Observer, Subject
     
     public void setText(int text)
     {
-        setImage(new GreenfootImage(""+no, 24, Color.black, new Color(0, 0, 0, 0)));
+        setImage(new GreenfootImage(""+no, 24, Color.white, new Color(0, 0, 0, 0)));
     } 
     
     public int getSmall() {

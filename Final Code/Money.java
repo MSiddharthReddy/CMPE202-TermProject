@@ -6,6 +6,8 @@
  */
 import greenfoot.*;
 import java.awt.Color;
+import java.awt.*;
+import java.util.*;
  
 public class Money extends Actor implements Observer
 {
@@ -40,7 +42,18 @@ public class Money extends Actor implements Observer
     }
     public void setText(int text)
     {
-        setImage(new GreenfootImage(""+text, 24, Color.black, new Color(0, 0, 0, 0)));
+        GreenfootImage newImage = new GreenfootImage(100,50);
+        newImage.clear();
+        
+        newImage.setFont(new Font("Comic Sans MS", Font.PLAIN, 24));
+        newImage.setColor(new Color(127, 127, 127, 127));
+        newImage.fill();
+        
+        newImage.setColor(Color.white);
+        newImage.drawString("$" + text, 20, 35);
+        setImage(newImage);
+        
+        setImage(newImage);
         
     } 
 }

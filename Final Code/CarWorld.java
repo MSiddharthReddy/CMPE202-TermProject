@@ -38,22 +38,22 @@ public class CarWorld extends World
     public CarWorld()
     {    
         // Create a new world with 600x400 cells with a cell size of 1x1 pixels.
-        super(600, 400, 1); 
+        super(960, 540, 1); 
        b.setSuccessor(c);
        c.setSuccessor(r);
         Destination d = new Destination();
         addObject(t, getWidth()/3,getHeight() - 50);
         addObject(p, getWidth()/2,getHeight() - 50);
-       addObject(f, getWidth()/2 + 100,getHeight() - 50);
-        addObject(b,50,getHeight()/3);
-        addObject(c,50,getHeight()/2);
-        addObject(d,getWidth() - 190,getHeight()/2);
-        addObject(r,50,getHeight()/2 + 50);
-        addObject(s,getWidth() - 100,getHeight()/3 + 220);
+       addObject(f, getWidth()/2 + 140,getHeight() - 50);
+        addObject(b,60,getHeight()/3);
+        addObject(c,60,getHeight()/2 + 20);
+        addObject(d,getWidth() - 180,getHeight()/2+20);
+        addObject(r,60,getHeight()/3 * 2 + 10);
+        addObject(s,getWidth() - 100,getHeight()/2 + 220);
        addObject(pt, getWidth()/3,getHeight() - 100);
-       addObject(pf, getWidth()/2 + 100,getHeight() - 100);
+       addObject(pf, getWidth()/2 + 140,getHeight() - 100);
        addObject(pp, getWidth()/2,getHeight() - 100);
-       addObject(m, 50,50);
+       addObject(m, 50,30);
        addObject(gameTime, 450, 30);
        c.setReceipt(receipt);
        r.setReceipt(receipt); 
