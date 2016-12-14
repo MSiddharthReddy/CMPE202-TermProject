@@ -56,7 +56,7 @@ public class Rocket extends Actor implements Vehicle, Handler, Subject2, Observe
        
         
         if(currentState!=fullFilled && currentState!= inTransit && a < 2)
-        { System.out.println("Rocket Packages before " + pack);
+        { System.out.println("Small Packages before " + pack);
             currentState.assign();
             
             return true;}
@@ -81,10 +81,10 @@ public class Rocket extends Actor implements Vehicle, Handler, Subject2, Observe
        
         if(currentState!= inTransit)
         {
-             System.out.println("Rocket Starting with" + pack);
+             System.out.println("Small Starting with" + pack);
              currentState.start();
              c = f.makeSet("R", pack);
-            //System.out.println(c.getPrice() + " " + c.getTime());
+            System.out.println(c.getPrice() + " " + c.getTime());
             notifyObservers(c.getPrice());
              int i = c.getTime();
             distance = ((this.getWorld().getObjects(Destination.class)).get(0).getX()) - this.getX();

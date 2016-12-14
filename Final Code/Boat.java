@@ -55,7 +55,7 @@ public class Boat extends Actor implements Vehicle, Handler,Subject2, Observer
         
         if(currentState != fullFilled && currentState!= inTransit)
         {
-            System.out.println("Boat Packages Beofre" + pack);
+            System.out.println("Big+ Packages Beofre" + pack);
             currentState.assign();
             return true;
         }
@@ -79,10 +79,10 @@ public class Boat extends Actor implements Vehicle, Handler,Subject2, Observer
        int pack = currentState.getPack();
         
         if(currentState!= inTransit)
-        {System.out.println("Boat Starting with" + pack);
+        {System.out.println("Big Starting with" + pack);
             currentState.start();
             c = f.makeSet("B", pack);
-            //System.out.println(c.getPrice() + " " + c.getTime());
+            System.out.println(c.getPrice() + " " + c.getTime());
             notifyObservers(c.getPrice());
             int i = c.getTime();
             distance = ((this.getWorld().getObjects(Destination.class)).get(0).getX()) - this.getX();

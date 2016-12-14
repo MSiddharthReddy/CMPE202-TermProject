@@ -53,7 +53,7 @@ public class Car extends Actor implements Vehicle, Handler, Subject2, Observer
         
         if(currentState!=fullFilled && currentState!= inTransit && a < 3)
         {
-            System.out.println("Car Packages Before" + pack);
+            System.out.println("Medium Packages Before" + pack);
             currentState.assign();
         return true;
        }
@@ -80,7 +80,7 @@ public class Car extends Actor implements Vehicle, Handler, Subject2, Observer
         
         if(currentState!= inTransit)
         {
-            
+            System.out.println("Medium Starting with" + pack);
             currentState.start();
             c = f.makeSet("C", pack);
             System.out.println(c.getPrice() + " " + c.getTime());
